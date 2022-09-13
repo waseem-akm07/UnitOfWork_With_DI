@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="45c3694b5bd2453598ea6d4b2d56fed2" Name="Diagram1">
+        <EntityTypeShape EntityType="MvcdbModel.Class" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MvcdbModel.Mapping" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MvcdbModel.Student" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MvcdbModel.Subject" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="MvcdbModel.FK_tb2_student_tb2_class" ManuallyRouted="false" />
+        <AssociationConnector Association="MvcdbModel.FK_tb2_mapping_tb2_student" ManuallyRouted="false" />
+        <AssociationConnector Association="MvcdbModel.FK_tb2_mapping_tb2_subject" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

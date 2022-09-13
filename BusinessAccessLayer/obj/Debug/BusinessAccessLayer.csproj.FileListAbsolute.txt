@@ -1,0 +1,16 @@
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\BusinessAccessLayer.pdb
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csprojAssemblyReference.cache
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.pdb
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\DataTransferObject.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\EntityFramework.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\DataAccessLayer.dll.config
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\DataTransferObject.pdb
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\EntityFramework.xml
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\obj\Debug\BusinessAccessLayer.csproj.CopyComplete
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\BusinessAccessLayer\bin\Debug\EntityFramework.SqlServer.xml

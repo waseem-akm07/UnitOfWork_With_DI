@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MvcdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="ClassId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClassName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Mapping">
+    <Key>
+      <PropertyRef Name="MapId" />
+    </Key>
+    <Property Name="MapId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MapStudentId" Type="int" />
+    <Property Name="MapSubjectId" Type="int" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentName" Type="varchar" MaxLength="50" />
+    <Property Name="StudentAddress" Type="varchar" MaxLength="50" />
+    <Property Name="StudentPhone" Type="varchar" MaxLength="50" />
+    <Property Name="StudentClassId" Type="int" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="SubjectId" />
+    </Key>
+    <Property Name="SubjectId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubjectName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_tb2_mapping_tb2_student">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Mapping" Type="Self.Mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="Mapping">
+        <PropertyRef Name="MapStudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb2_mapping_tb2_subject">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="0..1" />
+    <End Role="Mapping" Type="Self.Mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="SubjectId" />
+      </Principal>
+      <Dependent Role="Mapping">
+        <PropertyRef Name="MapSubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb2_student_tb2_class">
+    <End Role="Class" Type="Self.Class" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="StudentClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MvcdbModelStoreContainer">
+    <EntitySet Name="Class" EntityType="Self.Class" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mapping" EntityType="Self.Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subject" EntityType="Self.Subject" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tb2_mapping_tb2_student" Association="Self.FK_tb2_mapping_tb2_student">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="Mapping" EntitySet="Mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb2_mapping_tb2_subject" Association="Self.FK_tb2_mapping_tb2_subject">
+      <End Role="Subject" EntitySet="Subject" />
+      <End Role="Mapping" EntitySet="Mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb2_student_tb2_class" Association="Self.FK_tb2_student_tb2_class">
+      <End Role="Class" EntitySet="Class" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

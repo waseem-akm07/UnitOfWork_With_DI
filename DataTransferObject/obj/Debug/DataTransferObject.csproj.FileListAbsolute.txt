@@ -1,0 +1,12 @@
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\bin\Debug\DataTransferObject.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\bin\Debug\DataTransferObject.pdb
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\obj\Debug\DataTransferObject.csprojAssemblyReference.cache
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\obj\Debug\DataTransferObject.csproj.CoreCompileInputs.cache
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\obj\Debug\DataTransferObject.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\obj\Debug\DataTransferObject.pdb
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\bin\Debug\DataAccessLayer.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\bin\Debug\EntityFramework.dll
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\bin\Debug\DataAccessLayer.pdb
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\bin\Debug\DataAccessLayer.dll.config
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\bin\Debug\EntityFramework.xml
+E:\Company_Task\UnitOfWork_with_RepositoryDI\DataTransferObject\obj\Debug\DataTransferObject.csproj.CopyComplete
